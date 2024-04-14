@@ -91,7 +91,10 @@ body {
     justify-content: center;
     column-gap: 20px;
     font-weight: 500;
+    cursor: pointer;
+    transition: .5s;
 }
+
 
 footer { 
     margin-bottom: 20px;
@@ -105,6 +108,8 @@ footer a {
     color: hsl(158, 36%, 37%);
     text-decoration: none;
 }
+
+
 
 @media(min-width: 600px) {
     .main-container {
@@ -125,6 +130,16 @@ footer a {
 
     .main-container .container {
         width: 100%;
+    }
+
+    
+    .main-container .container button:hover {
+        background-color: #1a4130;
+    }
+
+    footer a:hover {
+        color: #1a4130;
+        text-shadow: .5px .5px .5px hsl(158, 36%, 37%);
     }
 }
 
