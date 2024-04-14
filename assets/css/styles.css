@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    font-size: 14px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.main-container {
+    margin: 30px auto;
+    width: 90%;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.main-container .image {
+    background-image: url('../images/image-product-mobile.jpg');
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+}
+
+.main-container .container {
+    padding: 23px;
+}
+
+.main-container .container .type {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.main-container .container .title {
+    font-family: "Fraunces";
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.main-container .container .description {
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+
+.main-container .container .value {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    margin-bottom: 15px;
+}
+
+.main-container .container .value .promotional-value {
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+}
+
+.main-container .container .value .full-value {
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.main-container .container button {
+    width: 100%;
+    color: #fff;
+    background-color: hsl(158, 36%, 37%);
+    padding: 20px;
+    border-radius: 10px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    font-weight: 500;
+}
+
+footer { 
+    margin-bottom: 20px;
+    font-size: 11px; 
+    text-align: center; 
+    position: inherit;
+    bottom: 0;
+}
+
+footer a { 
+    color: hsl(158, 36%, 37%);
+    text-decoration: none;
+}
+
+@media(min-width: 600px) {
+    .main-container {
+        width: 60%;
+    }
+} 
+
+@media(min-width: 1000px) {
+    .main-container {
+        display: flex;
+        width: 55%;
+    }
+
+    .main-container .image {
+        background-image: url('../images/image-product-desktop.jpg');
+        height: auto;
+    }
+
+    .main-container .container {
+        width: 100%;
+    }
+}
+
+@media(min-width: 1440px) {
+    .main-container {
+        width: 40%;
+    }
+
+    .main-container .container {
+        padding: 42px;
+    }
+}
+
+@media(min-width: 1800px) {
+    .main-container {
+        width: 30%;
+    }
+}
